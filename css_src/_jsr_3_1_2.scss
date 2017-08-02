@@ -1,0 +1,15 @@
+.custom-guide{
+  background:url("../images/bg-3-1-2.png") no-repeat;
+
+}
+.item-map{
+  display:block;
+
+  &-mask{
+    width:850px;
+    height:498px;
+    overflow:hidden;
+    margin-bottom:50px;
+  }
+
+}

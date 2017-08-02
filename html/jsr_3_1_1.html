@@ -3,110 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+  <script src="../js/lib/jquery-3.2.1.min.js"></script>
+  <script src="../js/gnb.js"></script>
 </head>
 <body>
 
 <header class="gnb">
-  <h1 class="gnb-logo"><a href="#" class="gnb-logo-link"></a></h1>
+  <h1 class="gnb-logo"><a href="#" class="gnb-logo-link">JongSoRi</a></h1>
   <nav class="gnb-menu">
     <ul class="gnb-depth1">
       <li class="gnb-depth1-item">
         <a href="#" class="gnb-depth1-link">종로이야기</a>
-        <ul class="gnb-depth2">
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">종로에대해서</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">명소</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">음식</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">체험</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">숙박</a></li>
-        </ul>
+        <div class="gnb-depth2-wrap">
+          <ul class="gnb-depth2">
+            <li class="gnb-depth2-item story"><a href="#" class="gnb-depth2-link">종로에대해서</a></li>
+            <li class="gnb-depth2-item story"><a href="#" class="gnb-depth2-link">명소</a></li>
+            <li class="gnb-depth2-item story"><a href="#" class="gnb-depth2-link">음식</a></li>
+            <li class="gnb-depth2-item story"><a href="#" class="gnb-depth2-link">체험</a></li>
+            <li class="gnb-depth2-item story"><a href="#" class="gnb-depth2-link">숙박</a></li>
+          </ul>
+        </div>
       </li>
+
       <li class="gnb-depth1-item">
         <a href="#" class="gnb-depth1-link">종로길잡이</a>
-        <ul class="gnb-depth2">
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">길잡이선택</a></li>
-        </ul>
+        <div class="gnb-depth2-wrap">
+          <ul class="gnb-depth2">
+            <li class="gnb-depth2-item guide"><a href="#" class="gnb-depth2-link">길잡이선택</a></li>
+          </ul>
+        </div>
       </li>
+
       <li class="gnb-depth1-item">
         <a href="#" class="gnb-depth1-link">종로와소통</a>
-        <ul class="gnb-depth2">
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">팁</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">후기</a></li>
-          <li class="gnb-depth2-item"><a href="#" class="gnb-depth2-link">묻고답하기</a></li>
-        </ul>
+        <div class="gnb-depth2-wrap">
+          <ul class="gnb-depth2">
+            <li class="gnb-depth2-item communication"><a href="#" class="gnb-depth2-link">TIP</a></li>
+            <li class="gnb-depth2-item communication"><a href="#" class="gnb-depth2-link">후기</a></li>
+            <li class="gnb-depth2-item communication"><a href="#" class="gnb-depth2-link">FAQ</a></li>
+          </ul>
+        </div>
       </li>
     </ul>
   </nav>
-  <ul class="language">
-    <li class="language-item"><a href="#" class="language-link">KOR</a></li>
-    <li class="language-item"><a href="#" class="language-link">JPN</a></li>
-    <li class="language-item"><a href="#" class="language-link">ENG</a></li>
-    <li class="language-item"><a href="#" class="language-link">CHI</a></li>
+  <ul class="gnb-language">
+    <li class="gnb-language-item"><a href="#" class="gnb-language-link">KOR</a></li>
+    <li class="gnb-language-item"><a href="#" class="gnb-language-link">JPN</a></li>
+    <li class="gnb-language-item"><a href="#" class="gnb-language-link">ENG</a></li>
+    <li class="gnb-language-item"><a href="#" class="gnb-language-link">CHI</a></li>
   </ul>
 </header>
-
-<section>
-  <div>
-    <div>
-      <h2>빠른가이드</h2>
-      <h2>THE QUICK GUIDE.</h2>
+
+<section class="section quick-guide">
+  <div class="inner-box">
+    <div class="title">
+      <h2 class="title-kor">빠른가이드</h2>
+      <h2 class="title-eng">THE QUICK GUIDE.</h2>
     </div>
 
-    <ul>
-      <li><img src="../images/course1.png" /></li>
-      <li><img src="../images/course2.png" /></li>
-      <li><img src="../images/course3.png" /></li>
-      <li><img src="../images/course4.png" /></li>
-      <li><img src="../images/course5.png" /></li>
+    <ul class="map-list">
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course1.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <!--
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course2.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course3.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course4.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course5.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+      -->
+
     </ul>
 
-    <div>
-      <div>코스를 선택하세요.</div>
-      <ul>
-        <li><a href="#">인사동코스</a></li>
-        <li><a href="#">경복궁코스</a></li>
-        <li><a href="#">동대문코스</a></li>
-        <li><a href="#">대학로코스</a></li>
-        <li><a href="#">한옥마을코스</a></li>
-      </ul>
-      <div>
-        <ul>
-          <li class="course1">
-            <p>인사동-쌈지길-떡박물관-종묘-비원-창경궁</p>
+    <div class="course-wrap">
+      <div class="course-select">코스를 선택하세요.</div>
+      <ul class="course-list">
+        <li class="course-list-item">
+          <input type="radio" value="인사동코스"/>인사동코스
+          <div class="">
+            <p class="">인사동-쌈지길-떡박물관-종묘-비원-창경궁</p>
             <p>예상소요시간 : , 이동거리 : 2.17km</p>
-          </li>
-          <li class="course2">
-            <p>경복궁-국립민속박물관-삼청동길-창덕궁</p>
-            <p>예상소요시간 : , 이동거리 : 2.03km</p>
-          </li>
-          <li class="course3">
-            <p>DDP-동대문-광장시장-종묘</p>
-            <p>예상소요시간 : , 이동거리 : 1.91km</p>
-          </li>
-          <li class="course4">
-            <p>대학로-마로니에공원-낙산공원-이화벽화마을-창경궁</p>
-            <p>예상소요시간 : , 이동거리 : 1.82km</p>
-          </li>
-          <li class="course5">
-            <p>청계천&청계광장-국립현대미술관(MMCA)-북촌한옥마을-경복궁</p>
-            <p>예상소요시간 : , 이동거리 : 2.23km</p>
-          </li>
-        </ul>
-      </div>
-
+          </div>
+        </li>
+        <li class="course-list-item">
+          <input type="radio" value="경복궁코스"/>경복궁코스
+          <p>경복궁-국립민속박물관-삼청동길-창덕궁</p>
+          <p>예상소요시간 : , 이동거리 : 2.03km</p>
+        </li>
+        <li class="course-list-item">
+        <input type="radio" value="동대문코스"/>동대문코스
+          <p>DDP-동대문-광장시장-종묘</p>
+          <p>예상소요시간 : , 이동거리 : 1.91km</p>
+        </li>
+        <li class="course-list-item">
+        <input type="radio" value="대학로코스"/>대학로코스
+          <p>대학로-마로니에공원-낙산공원-이화벽화마을-창경궁</p>
+          <p>예상소요시간 : , 이동거리 : 1.82km</p>
+        </li>
+        <li class="course-list-item">
+        <input type="radio" value="한옥마을코스"/>한옥마을코스
+          <p>청계천&청계광장-국립현대미술관(MMCA)-북촌한옥마을-경복궁</p>
+          <p>예상소요시간 : , 이동거리 : 2.23km</p>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <footer class="footer">
+
+
+
+
 
   <h2 class="footer-heading">JongSoRi</h2>
 
-  <div class="copyright">Copyright 2017 JSR
+
+
+
+
+  <div class="footer-copyright">&copy;Copyright 2017 JSR
+
+
+
+
 
     All Rights Reserved.</div>
 
+
+
+
+
+  <a href="#" class="footer-style-guide">Style Guide</a>
+
+
+
+
+
 </footer>
+
+
+
+
 
 </body>
 
+
+
+
+
 </html>
+
+
+
+
+

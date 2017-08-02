@@ -1,0 +1,33 @@
+%clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.inner-box{
+  width:850px;
+  margin:0 auto;
+  padding-left:240px;
+}
+
+.title{
+  //color:#000;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:75px;
+  height:256px;
+  box-sizing:border-box;
+
+  &-kor{
+    height:40px;
+    border-left:15px solid #ffcd12;
+    padding-left:40px;
+  }
+
+  &-eng{
+    height:36px;
+    border-left:15px solid #383838;
+    padding-left:40px;
+    font-family: 'Kanit', sans-serif;
+  }
+}

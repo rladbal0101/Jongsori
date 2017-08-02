@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/css_src/_common.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css_src/_gnb.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css_src/_jsr_1.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css_src/_jsr_3_1_1.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css_src/_jsr_3_1_2.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css_src/_reset.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/html_src/_include/_footer.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/gnb.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js_src/_gnb.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

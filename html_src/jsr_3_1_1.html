@@ -1,48 +1,84 @@
 
-<!--=include _include/_header.html -->
-
-<section class="">
+<!--=include _include/_gnb.html -->
+<section class="section quick-guide">
   <div class="inner-box">
-    <div>
-      <h2>빠른가이드</h2>
-      <h2>THE QUICK GUIDE.</h2>
+    <div class="title">
+      <h2 class="title-kor">빠른가이드</h2>
+      <h2 class="title-eng">THE QUICK GUIDE.</h2>
     </div>
 
     <ul class="map-list">
-      <li class="map-list-item"><img src="../images/course1.png" class="map-list-link" /></li>
-      <li class="map-list-item"><img src="../images/course2.png" class="map-list-link" /></li>
-      <li class="map-list-item"><img src="../images/course3.png" class="map-list-link" /></li>
-      <li class="map-list-item"><img src="../images/course4.png" class="map-list-link" /></li>
-      <li class="map-list-item"><img src="../images/course5.png" class="map-list-link" /></li>
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course1.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <!--
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course2.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course3.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course4.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+
+      <li class="map-list-item">
+        <figure class="item-map">
+          <div class="item-map-mask">
+            <img src="../images/course5.png" class="map-list-map" />
+          </div>
+        </figure>
+      </li>
+      -->
+
     </ul>
 
-    <div>
-      <div class="">코스를 선택하세요.</div>
+    <div class="course-wrap">
+      <div class="course-select">코스를 선택하세요.</div>
       <ul class="course-list">
-        <li class="course-list-item"><a href="#">인사동코스</a></li>
-        <li class="course-list-item"><a href="#">경복궁코스</a></li>
-        <li class="course-list-item"><a href="#">동대문코스</a></li>
-        <li class="course-list-item"><a href="#">대학로코스</a></li>
-        <li class="course-list-item"><a href="#">한옥마을코스</a></li>
-      </ul>
-      <ul class="course-list">
-        <li class="course1">
-          <p>인사동-쌈지길-떡박물관-종묘-비원-창경궁</p>
-          <p>예상소요시간 : , 이동거리 : 2.17km</p>
+        <li class="course-list-item">
+          <input type="radio" value="인사동코스"/>인사동코스
+          <div class="">
+            <p class="">인사동-쌈지길-떡박물관-종묘-비원-창경궁</p>
+            <p>예상소요시간 : , 이동거리 : 2.17km</p>
+          </div>
         </li>
-        <li class="course2">
+        <li class="course-list-item">
+          <input type="radio" value="경복궁코스"/>경복궁코스
           <p>경복궁-국립민속박물관-삼청동길-창덕궁</p>
           <p>예상소요시간 : , 이동거리 : 2.03km</p>
         </li>
-        <li class="course3">
+        <li class="course-list-item">
+        <input type="radio" value="동대문코스"/>동대문코스
           <p>DDP-동대문-광장시장-종묘</p>
           <p>예상소요시간 : , 이동거리 : 1.91km</p>
         </li>
-        <li class="course4">
+        <li class="course-list-item">
+        <input type="radio" value="대학로코스"/>대학로코스
           <p>대학로-마로니에공원-낙산공원-이화벽화마을-창경궁</p>
           <p>예상소요시간 : , 이동거리 : 1.82km</p>
         </li>
-        <li class="course5">
+        <li class="course-list-item">
+        <input type="radio" value="한옥마을코스"/>한옥마을코스
           <p>청계천&청계광장-국립현대미술관(MMCA)-북촌한옥마을-경복궁</p>
           <p>예상소요시간 : , 이동거리 : 2.23km</p>
         </li>
@@ -50,5 +86,9 @@
     </div>
   </div>
 </section>
+
+
+
+
 
 <!--=include _include/_footer.html-->

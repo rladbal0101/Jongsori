@@ -1,0 +1,180 @@
+.gnb{
+  width:240px;
+  height:100%;
+  position:fixed;
+
+  &-logo{
+    text-indent:-99999px;
+
+    &-link{
+      width:96px;
+      height:110px;
+      background:url("../images/image_sprite.png") no-repeat 0 -170px;
+      display:block;
+      position:absolute;
+      z-index:1;
+      margin:25px 22px;
+    }
+  }
+
+  &-depth1{
+    width:140px;
+    height:100%;
+    background:#404040;
+    top:0;
+    position:absolute;
+
+    &-item{
+      padding-top:30px; // 110 이였음
+      text-align:center;
+
+      &:first-child{
+        padding-top:230px; // 원래 270 ;;
+      }
+    }
+
+    &-link{
+      display:block;
+      color:#000;
+      font-size:20px;
+      font-weight:bold;
+      transition:all .5s ease-out;
+      padding:40px 11px;
+
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+
+  &-depth2{
+    width:100px;
+    height:100%;
+    background:#ffcd12;
+    position:absolute;
+    right:0;
+
+    &-wrap{
+      width:0;
+      height:100%;
+      top:0;
+      left:140px;
+      position:absolute;
+      transition:width .3s ease-out;
+      overflow: hidden;
+
+      &.on{
+        width:100px;
+      }
+    }
+
+    &-item{
+      margin-bottom:60px;
+
+      &.story:first-child{
+        margin-top:240px;
+        padding-left:24px;
+        width:52px;
+      }
+
+      &.guide{
+        margin:396px auto 0;
+        width:52px;
+      }
+
+      &.communication:first-child{
+        margin-top:456px;
+      }
+    }
+
+    &-link{
+      display:block;
+      color:#000;
+
+      &:hover{
+        color:#fff;
+        font-weight:bold;
+      }
+    }
+  }
+
+  &-language{
+    position:absolute;
+    top:710px;
+    left:30px;
+    width:97px;
+
+
+    &:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+
+    &-item{
+      width:40px;
+    }
+
+    &-item:nth-child(1),
+    &-item:nth-child(3){
+      border-right:1px solid #000000;
+      float:left;
+    }
+
+    &-item:nth-child(2),
+    &-item:nth-child(4){
+      float:left;
+      padding-left:8px;
+    }
+
+    &-link{
+      color:#000;
+      font-size:16px;
+      font-weight:bold;
+
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+
+}
+
+.gnb.sub{
+  .gnb-depth2-wrap{
+    width:100px;
+    transition:none;
+  }
+}
+
+.footer{
+  width:140px;
+  position:fixed;
+  top:850px;
+  left:18px;
+
+  &-heading{
+    width:101px;
+    height:34px;
+    background:url(../images/image_sprite.png) no-repeat -169px -289px;
+    text-indent:-99999px;
+  }
+
+  &-copyright{
+    width:110px;
+    font-size:10px;
+    text-align:center;
+    margin:12px 0 29px -5px;
+  }
+
+  &-style-guide{
+    color:#fff;
+    font-size:15px;
+    margin-left:11px;
+    display:block;
+
+    &:hover{
+      color:#000;
+    }
+  }
+}
